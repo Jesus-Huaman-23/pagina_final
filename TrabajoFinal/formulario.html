@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="css/formulario.css" class="rel">
+</head>
+
+<body>
+    <header id="banner">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="historia.html">Historia</a></li>
+            <li><a href="receta.html">Recetas</a></li>
+            <li><a href="embajadores.html">Embajadores</a></li>
+            <li><a href="formulario.html">Formulario</a></li>
+        </ul>
+    </nav>
+    <form action="">
+        <div class="resultado" id="resultado"></div><br><br>
+        <div class="comen">
+            <div id="comentarios"></div>
+            <h2 class="titulocomen">Escriba su comentario</h2><br>
+            <label for="lname">Nombres</label><br>
+            <input type="text" name="lname" id="txttitulo" placeholder="Escriba sus nombres"><br><br>
+            <p>Comentarios</p>
+            <textarea name="message" id="txtdescrip" cols="30" rows="10"
+                placeholder="Escribe su comentario"></textarea><br>
+            <input type="button" value="Publicar" id="btnpublicar">
+
+        </div>
+    </form>
+    <ul class="verDatosenpantalla" id="inprimircomentarios"></ul>
+
+
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-firestore.js"></script>
+
+    <script src="main.js"></script>
+
+    <footer>
+        <p>IESTP Misioneros Monfortinos<br>Profesor: Rosell Alejandro Valderrama Chumbes<br>
+            Curso: Diseño Web<br>Alumno: Huamán Boza Jesús Pedro</p>
+    </footer>
+</body>
+
+</html>
